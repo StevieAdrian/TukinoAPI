@@ -32,14 +32,14 @@ namespace TukinoAPI.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Episodes")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Episodes")
+                        .HasColumnType("int");
 
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float?>("Rating")
-                        .HasColumnType("real");
+                    b.Property<double?>("Rating")
+                        .HasColumnType("float");
 
                     b.Property<string>("Studio")
                         .HasColumnType("nvarchar(max)");

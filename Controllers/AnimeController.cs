@@ -7,7 +7,7 @@ namespace TukinoAPI.Controllers
 {
   
   [ApiController]
-  [Route("api/[Controller]")]
+  [Route("api/[controller]")]
 
   public class AnimeController : ControllerBase 
   {
@@ -17,6 +17,13 @@ namespace TukinoAPI.Controllers
       _context = context;
     }
 
+    [HttpGet]
+    public async Task<IActionResult> GetAllAnime()
+    {
+      var animeList = await _context.Animes.ToListAsync();
+      return Ok(animeList);
+    }
+    
     [HttpGet("{id}")]
     public async Task<IActionResult> GetAnimeById (int id)
     {

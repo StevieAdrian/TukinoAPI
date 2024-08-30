@@ -17,11 +17,11 @@ namespace TukinoAPI.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Title = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Episodes = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Episodes = table.Column<int>(type: "int", nullable: true),
                     Genre = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Studio = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Rating = table.Column<float>(type: "real", nullable: true)
+                    Rating = table.Column<double>(type: "float", nullable: true)
                 },
                 constraints: table =>
                 {

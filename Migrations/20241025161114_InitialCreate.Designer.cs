@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace TukinoAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20241024200909_InitialCreate")]
+    [Migration("20241025161114_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,14 +35,14 @@ namespace TukinoAPI.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Episodes")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("Episodes")
+                        .HasColumnType("int");
 
                     b.Property<string>("Genre")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<float?>("Rating")
-                        .HasColumnType("real");
+                    b.Property<double?>("Rating")
+                        .HasColumnType("float");
 
                     b.Property<string>("Studio")
                         .HasColumnType("nvarchar(max)");

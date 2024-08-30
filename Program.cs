@@ -19,4 +19,5 @@ var app = builder.Build();
 
 app.UseCors("AllowAllOrigins");
 app.MapControllers();
+app.UseDeveloperExceptionPage();
 app.Run();
