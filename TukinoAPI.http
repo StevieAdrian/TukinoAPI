@@ -1,0 +1,6 @@
+@TukinoAPI_HostAddress = http://localhost:5286
+
+GET {{TukinoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
