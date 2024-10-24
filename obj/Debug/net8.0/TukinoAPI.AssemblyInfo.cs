@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TukinoAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9b4b2622211d8104f1afff709570086c63f18f79")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+17adf76a5b605f235bc4195e368175d00e84351d")]
 [assembly: System.Reflection.AssemblyProductAttribute("TukinoAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TukinoAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
